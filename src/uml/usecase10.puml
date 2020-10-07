@@ -7,18 +7,17 @@ actor :Адміністратор: as Admin
 actor :Модератор: as Moder
 actor :Користувач: as User
 
-usecase "<b>UC_1</b>\nВідповісти на коментар \nкорисувача" as UC_1
-usecase "<b>UC_2</b>\nВидалити набір даних" as UC_2
-usecase "<b>UC_3</b>\nДодати нового модератора" as UC_3
+usecase "<b>UC_1</b>\nКерувати доступом\n до наборів даних" as UC_1
+usecase "<b>UC_2</b>\nКерувати модераторами" as UC_2
 
-usecase "<b>UC_4</b>\nДодати новий набір даних" as UC_4
-usecase "<b>UC_5</b>\nРедагувати існуючий набір даних" as UC_5
-usecase "<b>UC_6</b>\nРедагувати особисті дані" as UC_6
+usecase "<b>UC_3</b>\nОперувати даними" as UC_3
+usecase "<b>UC_4</b>\nРедагувати особисті дані" as UC_4
 
-usecase "<b>UC_7</b>\nЗнайти набір даних" as UC_7
-usecase "<b>UC_8</b>\nПереглянути загальну \nстатистику даних" as UC_8
-usecase "<b>UC_9</b>\nЗавантажити набір даних" as UC_9
-usecase "<b>UC_10</b>\nКоментувати набір даних" as UC_10
+usecase "<b>UC_5</b>\nЗнайти набір даних" as UC_5
+usecase "<b>UC_6</b>\nПереглянути загальну \nстатистику даних" as UC_6
+usecase "<b>UC_7</b>\nЗавантажити набір даних" as UC_7
+
+
 
     right footer
         Open data management system
