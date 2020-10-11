@@ -1,0 +1,19 @@
+@startuml
+    right header
+        <font size=24 color=black>Package:<b> UCD_2.1
+    end header
+
+    package UCD_1.1 {
+        usecase "<b>UC_2</b>\nКерувати доступом\n до набору даних" as UC_2 #aaeeaa
+    }
+    
+    actor "Адміністратор" as Admin #eeee99
+    Admin -l-> UC_2
+    
+    usecase "<b>UC_2.1</b>\nДодати нового модератора" as UC_2.1
+    usecase "<b>UC_2.2</b>\nВидалити існуючого" as UC_2.2
+    
+    UC_2.1 .u.> UC_2: extends
+    UC_2.2 .u.> UC_2: extends
+    
+@enduml
