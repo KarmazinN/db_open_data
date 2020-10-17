@@ -170,5 +170,7 @@ DDF має ряд заздалегідь визначених типів пон�
 ## <a name="links"></a> Посилання
 
 https://youcontrol.com.ua/topics/open-data-otkryityie-dannyie-youcontrol/
-
+https://docs.google.com/document/d/1Cd2kEH5w3SRJYaDcu-M4dU5SY8No84T3g-QlNSW6pIE/edit
+https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%B0%D0%B4%D0%B0%D0%BD%D1%96
 https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96_%D0%B4%D0%B0%D0%BD%D1%96
+https://www.dlsweb.rmit.edu.au/Toolbox/knowmang/content/dataconcepts/what_is_data.htm
