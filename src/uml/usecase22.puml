@@ -4,18 +4,16 @@
     end header
 
     package UCD_1.1 {
-        usecase "<b>UC_3</b>\nОперувати даними" as UC_3 #aaeeaa
+        usecase "<b>UC_3</b>\nКерувати категоріями" as UC_3 #aaeeaa
     }
     
-    actor "Модератор" as Moder #eeee99
-    Moder -l-> UC_3
+    actor "Адміністратор" as Admin #eeee99
+    Admin -l-> UC_3
     
-    usecase "<b>UC_2.1</b>\nВидалити файли даних" as UC_3.1
-    usecase "<b>UC_2.2</b>\nРедагувати файли даних" as UC_3.2
-    usecase "<b>UC_2.2</b>\nДодати нові файли даних" as UC_3.3
+    usecase "<b>UC_3.1</b>\nСтворити нову категорію" as UC_1.1
+    usecase "<b>UC_3.2</b>\nВидалити існуючу категорію" as UC_1.2
     
-    UC_3.1 .u.> UC_3: extends
-    UC_3.2 .u.> UC_3: extends
-    UC_3.3 .u.> UC_3: extends
+    UC_1.1 .u.> UC_3: extends
+    UC_1.2 .u.> UC_3: extends
     
 @enduml
