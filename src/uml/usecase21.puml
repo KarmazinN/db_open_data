@@ -4,7 +4,7 @@
     end header
 
     package UCD_1.1 {
-        usecase "<b>UC_2</b>\nКерувати доступом модераторів/n до наборів даних" as UC_2 #aaeeaa
+        usecase "<b>UC_2</b>\nКерувати доступом модераторів\n до наборів даних" as UC_2 #aaeeaa
     }
     
     actor "Адміністратор" as Admin #eeee99
