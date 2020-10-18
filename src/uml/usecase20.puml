@@ -10,8 +10,8 @@
     actor "Адміністратор" as Admin #eeee99
     Admin -l-> UC_1
     
-    usecase "<b>UC_2.1</b>\nДодати нового модератора" as UC_1.1
-    usecase "<b>UC_2.2</b>\nВидалити існуючого модератора" as UC_1.2
+    usecase "<b>UC_1.1</b>\nДодати нового модератора" as UC_1.1
+    usecase "<b>UC_1.2</b>\nВидалити існуючого модератора" as UC_1.2
     
     UC_1.1 .u.> UC_1: extends
     UC_1.2 .u.> UC_1: extends
