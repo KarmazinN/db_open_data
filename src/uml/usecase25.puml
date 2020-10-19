@@ -7,7 +7,7 @@
         usecase "<b>UC_5</b>\nВзаємодія з набором даних" as UC_3 #aaeeaa
     }
     
-    actor "Адміністратор" as Admin #eeee99
+    actor "Модератор" as Admin #eeee99
     Admin -l-> UC_3
     
     usecase "<b>UC_5.1</b>\nВидалити файл з набору даних" as UC_1.1
