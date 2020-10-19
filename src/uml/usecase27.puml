@@ -1,0 +1,19 @@
+@startuml
+    right header
+        <font size=24 color=black>Package:<b> UCD_2.4
+    end header
+
+    package UCD_1.1 {
+        usecase "<b>UC_7</b>\nПереглянути файли даних" as UC_7 #aaeeaa
+    }
+    
+    actor "Користувач" as User #eeee99
+    User -l-> UC_7
+    
+    usecase "<b>UC_7.1</b>\nЗнайти файл за ключовим словом" as UC_7.1
+    usecase "<b>UC_7.2</b>\nзнайти файл вручну за категоріями" as UC_7.2
+    
+    
+    UC_7.1 .u.> UC_7: extends
+    UC_7.2 .u.> UC_7: extends
+@enduml
