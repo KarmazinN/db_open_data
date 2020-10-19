@@ -11,7 +11,7 @@
     User -l-> UC_7
     
     usecase "<b>UC_7.1</b>\nЗнайти файл за ключовим словом" as UC_7.1
-    usecase "<b>UC_7.2</b>\nзнайти файл вручну за категоріями" as UC_7.2
+    usecase "<b>UC_7.2</b>\nЗнайти файл вручну" as UC_7.2
     
     
     UC_7.1 .u.> UC_7: extends
