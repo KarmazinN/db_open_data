@@ -12,8 +12,9 @@
     
     usecase "<b>UC_7.1</b>\nЗнайти файл за ключовим словом" as UC_7.1
     usecase "<b>UC_7.2</b>\nЗнайти файл вручну" as UC_7.2
-    
+    usecase "<b>UC_7.3</b>\nЗнайти файл за тегом" as UC_7.3
     
     UC_7.1 .u.> UC_7: extends
     UC_7.2 .u.> UC_7: extends
+    UC_7.3 .u.> UC_7: extends
 @enduml
