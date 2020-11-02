@@ -7,7 +7,7 @@ skinparam Note {
 }
 
 left header
-<font color=000 size=18><b>Package:</b> Developer
+<font color=000 size=18><b>Package:</b> Admin
 
 <font color=000 size=16><b>ID:</b> UC_1.1
 <font color=000 size=16><b>Назва:</b> Додавання нового модератора.
