@@ -1,0 +1,39 @@
+@startuml
+skinparam ArchimateBackgroundColor #ffffff
+skinparam	shadowing false
+skinparam Note {
+	BackgroundColor #f85658
+	FontColor #ffffff
+}
+
+left header
+<font color=000 size=18><b>Package:</b> Admin
+
+<font color=000 size=16><b>ID:</b> UC_3.2
+<font color=000 size=16><b>Назва:</b> Видалити існуючу категорію.
+<font color=000 size=16><b>Учасники:</b> Адміністратор, система.
+<font color=000 size=16><b>Передумови:</b> Адміністратор ввійшов в систему.
+<font color=000 size=16><b>Результат:</b> Категорія видалена.
+<font color=000 size=16><b>Виключні ситуації:</b> відсутні
+
+<font color=000 size=16><b>Основний сценарій:</b>
+
+end header
+
+|Адміністратор|
+start
+: Обирає категорію, яку потрібно видалити;
+: Натискає кнопку "видалити категорію";
+
+|Система|
+
+: Вносить відповідні записи до бази данних;
+
+|Адміністратор|
+
+: З відповіді БД видаляє категорію;
+
+stop;
+
+
+@enduml

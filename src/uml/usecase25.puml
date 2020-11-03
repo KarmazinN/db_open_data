@@ -13,9 +13,11 @@
     usecase "<b>UC_5.1</b>\nВидалити файл з набору даних" as UC_1.1
     usecase "<b>UC_5.2</b>\nДодати файли до набору даних" as UC_1.2
     usecase "<b>UC_5.3</b>\nРедагувати файл з набору даних" as UC_1.3
+    usecase "<b>UC_5.4</b>\nПрисвоїти тег для набору даних" as UC_1.4
     
     UC_1.1 .u.> UC_3: extends
     UC_1.2 .u.> UC_3: extends
     UC_1.3 .u.> UC_3: extends
+    UC_1.4 .u.> UC_3: extends
     
 @enduml

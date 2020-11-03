@@ -1,0 +1,47 @@
+@startuml
+skinparam ArchimateBackgroundColor #ffffff
+skinparam	shadowing false
+skinparam Note {
+	BackgroundColor #f85658
+	FontColor #ffffff
+}
+
+left header
+<font color=000 size=18><b>Package:</b> Moderator
+
+<font color=000 size=16><b>ID:</b> UC_5.4
+<font color=000 size=16><b>Назва:</b> Присвоїти тег для набору даних.
+<font color=000 size=16><b>Учасники:</b> Модератор, система.
+<font color=000 size=16><b>Передумови:</b> Коментар користувача існує.
+<font color=000 size=16><b>Результат:</b> Відповідь на коментар додана.
+<font color=000 size=16><b>Виключні ситуації:</b>
+<font color=000 size=16> ЕХ 06MODER: Заданий тег вже доданий
+
+<font color=000 size=16><b>Основний сценарій:</b>
+
+end header
+
+|Модератор|
+start
+: Обирає набір даних;
+
+: Вводить тег;
+
+
+: Натискає кнопку "Додати тег";
+
+|Система|
+
+: Додає тег;
+note right
+Можливо ЕХ 06MODER
+end note
+
+|Модератор|
+
+: Отиримує повідомлення що тег доданий;
+
+stop;
+
+
+@enduml
