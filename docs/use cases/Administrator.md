@@ -1,56 +1,19 @@
-### Адміністратор
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_1.1.puml)
 
-***ID:*** 0001ADMIN
-    
-***НАЗВА:*** Вхід в систему
-    
-***УЧАСНИКИ:*** Адміністратор, система
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_1.2.puml)
 
-***ПЕРЕДУМОВИ:*** Відсутні
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_2.2.puml)
 
-***РЕЗУЛЬТАТ:*** Вхід в систему 
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_3.1.puml)
 
-***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
-- EX 001ADMIN Невірний логін чи пароль
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_3.2.puml)
 
-***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-- 1. Адміністратор вводить логін та пароль.
-- 2. Можлива ситуація EX 001ADMIN
-- 3. Адміністратор отримує доступ до системи
-#                         
-***ID:*** 0002ADMIN
-    
-***НАЗВА:*** Реєстрація нового модератора
-    
-***УЧАСНИКИ:*** Адміністратор, система
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_4.1.puml)
 
-***ПЕРЕДУМОВИ:*** Адміністратор ввійшов в систему
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_4.2.puml)
 
-***РЕЗУЛЬТАТ:*** Доданий новий модератор
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_5.1.puml)
 
-***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
-- EX 002ADMIN Такий модератор вже присутній в системі
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_5.2.puml)
 
-***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-- 1. Адміністратор вводить дані про нового модератора
-- 2. Можлива ситуація EX 002ADMIN
-- 3. В систему додано нового модератора                        
-#                      
-***ID:*** 0003ADMIN
-    
-***НАЗВА:*** Вирішення питання оприлюднення наборів даних
-    
-***УЧАСНИКИ:*** Адміністратор, система
-
-***ПЕРЕДУМОВИ:*** Адміністратор вибрав необхідний набір даних
-
-***РЕЗУЛЬТАТ:*** Статус набору даних (публічний/приватний)
-
-***ВИКЛЮЧНІ СИТУАЦІЇ:*** Відсутні
-
-***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-- 1. Адміністратор вибрає необхідний набір даних
-- 2. Адміністратор змінює статус набору даних 
-- 3. Статус набора даних змінено
-                         
-#                      
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_5.3.puml)
