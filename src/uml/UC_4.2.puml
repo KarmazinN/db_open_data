@@ -35,11 +35,5 @@ start
 
 stop;
 
-right footer
 
-
-Robin ODMS
-НТУУ КПІ ім.І.Сікорського
-Киів-2020
-end footer
 @enduml
