@@ -15,7 +15,7 @@ left header
 <font color=000 size=16><b>Передумови:</b> Коментар користувача існує.
 <font color=000 size=16><b>Результат:</b> Відповідь на коментар додана.
 <font color=000 size=16><b>Виключні ситуації:</b>
-<font color=000 size=16> EX 01ADMIN: Відсутні
+<font color=000 size=16> : Відсутні
 
 <font color=000 size=16><b>Основний сценарій:</b>
 
