@@ -1,16 +1,40 @@
-### Користувач 
-    
-    
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user10.1.puml)
+### Сценарії для незареєстрованого користувача 
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user10.2.puml)
+***ID:*** UC_11
+    
+***НАЗВА:*** Створення облікового запису
+    
+***УЧАСНИКИ:*** Користувач, система
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user10.3.puml)
+***ПЕРЕДУМОВИ:*** Відсутні
+
+***РЕЗУЛЬТАТ:*** Обліковий запис
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_11.1 Поле "e-mail" не може бути пустим
+- EX_11.2 Цьому e-mail вже відповідає обліковий запис
+- EX_11.3 Поле "ім'я користувача" не може бути пустим
+- EX_11.4 Цьому імені користувача вже відповідає обліковий запис
+- EX_11.5 Поле "пароль" не може бути пустим
+
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
 
 ![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user11.puml)
+#
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user7.puml)
+***ID:*** UC_12
+    
+***НАЗВА:*** Пошук наборів даних
+    
+***УЧАСНИКИ:*** Користувач, система
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user6.puml)
+***ПЕРЕДУМОВИ:*** Відсутні
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user9.puml)
+***РЕЗУЛЬТАТ:*** Список наборів даних, які відповідають запиту
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_12.1 По даному запиту набір даних не знайдено
+
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user12.puml)
