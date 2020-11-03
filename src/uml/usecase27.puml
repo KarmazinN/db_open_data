@@ -14,6 +14,6 @@
     usecase "<b>UC_12.2</b>\nЗнайти файл вручну" as UC_12.2
 
     
-    UC_7.1 .u.> UC_7: extends
-    UC_7.2 .u.> UC_7: extends
+    UC_12.1 .u.> UC_12: extends
+    UC_12.2 .u.> UC_12: extends
 @enduml
