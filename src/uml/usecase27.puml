@@ -4,17 +4,16 @@
     end header
 
     package UCD_1.1 {
-        usecase "<b>UC_7</b>\nПереглянути файли даних" as UC_7 #aaeeaa
+        usecase "<b>UC_12</b>\nПереглянути файли даних" as UC_12 #aaeeaa
     }
     
     actor "Користувач" as User #eeee99
-    User -l-> UC_7
+    User -l-> UC_12
     
-    usecase "<b>UC_7.1</b>\nЗнайти файл за ключовим словом" as UC_7.1
-    usecase "<b>UC_7.2</b>\nЗнайти файл вручну" as UC_7.2
-    usecase "<b>UC_7.3</b>\nЗнайти файл за тегом" as UC_7.3
+    usecase "<b>UC_12.1</b>\nВикористати фільтри" as UC_12.1
+    usecase "<b>UC_12.2</b>\nЗнайти файл вручну" as UC_12.2
+
     
     UC_7.1 .u.> UC_7: extends
     UC_7.2 .u.> UC_7: extends
-    UC_7.3 .u.> UC_7: extends
 @enduml
