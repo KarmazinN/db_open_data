@@ -6,20 +6,7 @@ skinparam Note {
 	FontColor #ffffff
 }
 
-left header
-<font color=000 size=18><b>Package:</b> Moderator
 
-<font color=000 size=16><b>ID:</b> UC_5.4
-<font color=000 size=16><b>Назва:</b> Присвоїти тег для набору даних.
-<font color=000 size=16><b>Учасники:</b> Модератор, система.
-<font color=000 size=16><b>Передумови:</b> Коментар користувача існує.
-<font color=000 size=16><b>Результат:</b> Відповідь на коментар додана.
-<font color=000 size=16><b>Виключні ситуації:</b>
-<font color=000 size=16> ЕХ 06MODER: Заданий тег вже доданий
-
-<font color=000 size=16><b>Основний сценарій:</b>
-
-end header
 
 |Модератор|
 start
