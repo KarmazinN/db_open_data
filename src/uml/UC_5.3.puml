@@ -1,15 +1,6 @@
 @startuml EditAction
 
-left header
-<font color=000 size=18><b>Package:</b> Moderator
-<font color=000 size=16><b>ID:</b> UC_5.3
-<font color=000 size=16><b>Назва:</b> Змінити набір даних
-<font color=000 size=16><b>Учасники:</b> Модератор
-<font color=000 size=16><b>Передумови:</b> Модератор ввійшов в систему
-<font color=000 size=16><b>Результат:</b>Файл даних змінено
-<font color=000 size=16><b>Виключні ситуації:</b> Відсутні
-<font color=000 size=16><b>Основний сценарій:</b>
-end header
+
 
 skinparam	shadowing false
 skinparam Note {
