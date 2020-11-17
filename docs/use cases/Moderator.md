@@ -42,6 +42,7 @@
 ***ВИКЛЮЧНІ СИТУАЦІЇ:*** EX01 MODER Файл даних з таким іменем вже існує
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
 ![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_5.3.puml)
 
 ***ID:*** UC_5.4
@@ -57,6 +58,7 @@
 ***ВИКЛЮЧНІ СИТУАЦІЇ:*** EX06 MODER Заданий тег вже доданий
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+
 ![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_5.4.puml)
 
 ***ID:*** UC_6
