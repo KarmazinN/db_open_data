@@ -1,17 +1,129 @@
-# Не зареєстрований 
+### Сценарії для незареєстрованого користувача 
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_10.puml)
+***ID:*** UC_11
+    
+***НАЗВА:*** Створення облікового запису
+    
+***УЧАСНИКИ:*** Користувач, система
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_11.puml)
+***ПЕРЕДУМОВИ:*** Відсутні
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_12.1.puml)
+***РЕЗУЛЬТАТ:*** Обліковий запис
 
-# Зареєстрований 
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_11.1 Поле "e-mail" не може бути пустим
+- EX_11.2 Цьому e-mail вже відповідає обліковий запис
+- EX_11.3 Поле "ім'я користувача" не може бути пустим
+- EX_11.4 Цьому імені користувача вже відповідає обліковий запис
+- EX_11.5 Поле "пароль" не може бути пустим
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_7.puml)
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_8.1.puml)
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user11.puml)
+#
+***ID:*** UC_12
+    
+***НАЗВА:*** Пошук наборів даних
+    
+***УЧАСНИКИ:*** Користувач, система
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_8.2.puml)
+***ПЕРЕДУМОВИ:*** Відсутні
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/UC_9.puml)
+***РЕЗУЛЬТАТ:*** Список наборів даних, які відповідають запиту
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_12.1 По даному запиту набір даних не знайдено
+
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user12.puml)
+#
+***ID:*** UC_10
+    
+***НАЗВА:*** Завантаження файлів з набору даних
+    
+***УЧАСНИКИ:*** Користувач, система
+
+***ПЕРЕДУМОВИ:*** В системі присутній набір даних, з якого будуть завантажувати файли
+
+***РЕЗУЛЬТАТ:*** Завантажені файли
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_10.1 Вибраний файл на даний момент недоступний
+- EX_10.2 Користувач не підтверджує завантаження
+
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user10.puml)
+#
+### Сценарії для зареєстрованого користувача 
+
+***ID:*** UC_9
+    
+***НАЗВА:*** Вхід в систему
+    
+***УЧАСНИКИ:*** Користувач, система
+
+***ПЕРЕДУМОВИ:*** Існування облікового запису
+
+***РЕЗУЛЬТАТ:*** Вхід в систему
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_9.1 Некоректний e-mail чи пароль
+
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user9.puml)
+#
+***ID:*** UC_8.1
+    
+***НАЗВА:*** Видалення облікового запису
+    
+***УЧАСНИКИ:*** Користувач, система
+
+***ПЕРЕДУМОВИ:*** Існування облікового запису
+
+***РЕЗУЛЬТАТ:*** Видалення облікового запису
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_8.1.1 Користувач не підтверджує видалення облікового запису
+
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user8.1.puml)
+#
+***ID:*** UC_8.2
+    
+***НАЗВА:*** Редагування облікового запису
+    
+***УЧАСНИКИ:*** Користувач, система
+
+***ПЕРЕДУМОВИ:*** Існування облікового запису
+
+***РЕЗУЛЬТАТ:*** Зміни в обліковому записі
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_8.2.1 Цьому e-mail вже відповідає обліковий запис
+- EX_8.2.2 Цьому імені користувача вже відповідає обліковий запис
+
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user8.2.puml)
+#
+***ID:*** UC_7
+    
+***НАЗВА:*** Створення коментаря
+    
+***УЧАСНИКИ:*** Користувач, система
+
+***ПЕРЕДУМОВИ:*** В системі присутній набір даних до якого буде створюватися коментар, користувач вибрав певний набір даних, користувач авторизований в системі
+
+***РЕЗУЛЬТАТ:*** Коментар створено
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- EX_7.1 Коментар не може бути пустим
+- EX_7.2 Коментар не може бути довшим ніж 999 символів
+
+**ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/Diana/src/uml/user7.puml)
