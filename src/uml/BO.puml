@@ -1,0 +1,51 @@
+@startuml
+entity Guest
+entity Registered_User
+entity Moderator
+entity Administrator
+
+entity User
+entity User.email
+entity User.password
+entity User.username
+entity User.photo
+
+entity Data_file
+entity Data_file.name
+entity Data_file.tag
+entity Data_file.description
+
+entity Data_set
+entity Data_set.name
+entity Data_set.description
+
+entity Category
+entity Category.name
+entity Category.description
+
+Guest -r|> User
+Registered_User -r|> User
+Moderator -l|> User
+Administrator -l|> User
+
+User.email --* User
+User.password --* User
+User.username --* User
+User.photo --* User
+
+Data_file --* Data_file.name
+Data_file --* Data_file.tag
+Data_file --* Data_file.description
+
+Data_set --* Data_set.name
+Data_set --* Data_set.description
+
+Category --* Category.name
+Category --* Category.description
+
+User "(1,1)"-down-"(0,*)" Data_file
+Data_file "(1,1)"-down-"(0,*)" Data_set
+Data_set "(1,1)"-down-"(0,*)" Category
+
+
+@enduml
