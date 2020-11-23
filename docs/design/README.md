@@ -2,5 +2,5 @@
 
 ## Модель бізнес-об'єктів
 
-*В рамках проекту розробляється модель бізнес-об'єктів, ER-модель та реляційна схема.*
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/KarmazinN/db_open_data/master/src/uml/BO.puml)
 
