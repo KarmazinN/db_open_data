@@ -10,6 +10,8 @@ entity User.password
 entity User.username
 entity User.photo
 
+entity Access
+
 entity Data_file
 entity Data_file.name
 entity Data_file.tag
@@ -23,10 +25,10 @@ entity Category
 entity Category.name
 entity Category.description
 
-Guest -r|> User
-Registered_User -r|> User
-Moderator -l|> User
-Administrator -l|> User
+Guest -up-|> Access
+Registered_User -up-|> Access
+Moderator -down-|> Access
+Administrator -down-|> Access
 
 User.email --* User
 User.password --* User
@@ -44,8 +46,9 @@ Category --* Category.name
 Category --* Category.description
 
 User "(1,1)"-down-"(0,*)" Data_file
-Data_file "(1,1)"-down-"(0,*)" Data_set
-Data_set "(1,1)"-down-"(0,*)" Category
+User "(1,1)"-l-"(0,*)" Access
+Data_file "(1,1)"-r-"(0,*)" Data_set
+Data_set "(1,1)"-up-"(0,*)" Category
 
 
 @enduml
