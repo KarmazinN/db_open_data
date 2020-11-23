@@ -3,7 +3,7 @@
 [Аналіз вимог до інформаційної системи](./requirements)
 
 
-[Use case](./requirements)
+[Модель прецедентів](./requirements)
 
 
 [Аналіз вимог до інформаційної системи](./requirements)
