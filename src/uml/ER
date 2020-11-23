@@ -1,0 +1,36 @@
+@startuml
+
+entity User <<ENTITY>> {
+  username = Text
+  email = EMAIL
+  password = TEXT
+  photo = LINK
+}
+
+entity Data_file <<ENTITY>> {
+  name = TEXT
+  tag = TEXT
+  description = TEXT
+}
+
+entity Access <<ENTITY>> {
+  role = ROLE
+  permission = PERMISSION
+}
+
+entity Data_set <<ENTITY>> {
+  name = TEXT
+  description = TEXT
+}
+
+entity Category <<ENTITY>> {
+  name = TEXT
+  description = TEXT
+}
+
+User "(1,1)"-down-"(0,*)" Data_file
+User "(1,1)"-r-"(0,*)" Access
+Data_file "(1,1)"-r-"(0,*)" Data_set
+Data_set "(1,1)"-r-"(0,*)" Category
+
+@enduml
