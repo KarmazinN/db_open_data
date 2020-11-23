@@ -1,8 +1,4 @@
 @startuml
-entity Guest
-entity Registered_User
-entity Moderator
-entity Administrator
 
 entity User
 entity User.email
@@ -11,6 +7,9 @@ entity User.username
 entity User.photo
 
 entity Access
+
+entity Access.role
+entity Access.permissions
 
 entity Data_file
 entity Data_file.name
@@ -25,10 +24,8 @@ entity Category
 entity Category.name
 entity Category.description
 
-Guest -up-|> Access
-Registered_User -up-|> Access
-Moderator -down-|> Access
-Administrator -down-|> Access
+Access -up-* Access.role
+Access --* Access.permissions
 
 User.email --* User
 User.password --* User
@@ -42,8 +39,8 @@ Data_file --* Data_file.description
 Data_set --* Data_set.name
 Data_set --* Data_set.description
 
-Category --* Category.name
-Category --* Category.description
+Category -l-* Category.name
+Category -r-* Category.description
 
 User "(1,1)"-down-"(0,*)" Data_file
 User "(1,1)"-l-"(0,*)" Access
