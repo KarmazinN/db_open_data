@@ -10,5 +10,5 @@
 
 ## Реляційна схема
 
-![alt text](src/uml/SQL.jpg )
+![alt text](src/uml/123456.jpg )
 
