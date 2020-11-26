@@ -1,0 +1,68 @@
+@startuml
+entity User
+  entity User.name
+  entity User.email
+  entity User.password
+  entity User.photo
+  
+  entity Access
+  
+  entity Role
+  entity Role.name
+  entity Role.permissions
+  
+  entity Datafile
+  entity Datafile.Text
+  entity Datafile.Path
+  entity Datafile.mimeTime
+  
+  entity Dataset
+  entity Dataset.guid
+  
+  entity Metadata
+  entity Metadata.key
+  entity Metadata.value
+  
+  entity Comment
+  entity Comment.author
+  entity Comment.body
+  entity Comment.parent
+  
+  entity Category
+  entity Category.name
+  entity Category.descriptions
+  
+  User.email -up-* User
+  User.password -r-* User
+  User.name --* User
+  User.photo --* User
+  
+  Role.name --* Role
+  Role.permissions -l-* Role 
+  
+  Datafile.Text --* Datafile
+  Datafile.Path --* Datafile
+  Datafile.mimeTime --* Datafile
+  
+  Dataset.guid -up-* Dataset
+  
+  Metadata.key --* Metadata
+  Metadata.value --* Metadata
+  
+  Comment.author --* Comment
+  Comment.body --* Comment
+  Comment.parent --* Comment
+  
+  Category.name --* Category 
+  Category.descriptions -up-* Category
+  
+  User "(1,1)"<-down-"(0,*)" Access
+  Role "(1,1)"<-up-"(0,*)" Access
+  User "(1,1) owner"<-r-"(0,*)" Datafile
+  Dataset "(1,1)"<-l-"(0,*)" Access
+  Datafile "(0,*)"-down->"(1,1)" Dataset
+  Category "(1,1)"<-l-"(0,*)" Dataset
+  Metadata "(0,*)" --> "(1,1)" Dataset
+
+  Comment "(0,*)" --> "(1,1)" Dataset
+@enduml
