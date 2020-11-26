@@ -1,0 +1,59 @@
+@startuml
+
+entity User <<ENTITY>> {
+  name: Text
+  email: EMAIL
+  password: TEXT
+  photo: URL
+}
+
+entity Datafile <<ENTITY>> {
+  name: TEXT
+  path: TEXT
+  mimeType: TEXT
+}
+
+entity Role <<ENTITY>> {
+  name: TEXT
+  permissions: collection of PERMISSION
+}
+
+entity Access <<ENTITY>> {}
+
+entity Dataset <<ENTITY>> {
+  guid: GUID
+}
+
+entity Category <<ENTITY>> {
+  name: TEXT
+  description: TEXT
+}
+
+entity Metadata {
+    key: TEXT
+    value: TEXT
+}
+
+entity Comment {
+    author: TEXT
+    body: TEXT
+    parent: TEXT
+}
+
+note "Required metadata keys may be \n name, description, url, organozation, etc" as n
+
+n . Metadata
+User "(1,1) owner"<-down-"(0,*)" Datafile
+Role "(1,1)"<-d-"(0,*)" Access
+User "(1,1)"<-l-"(0,*)" Access
+Dataset "(1,1)"<-d-"(0,*)" Access
+
+Datafile "(0,*)"-l->"(1,1)" Dataset
+Category "(1,1)"<-l-"(0,*)" Dataset
+
+Category "(1,1) parent"<-"(0,*)" Category
+
+Metadata "(0,*)" --> "(1,1)" Dataset
+
+Comment "(0,*)" --> "(1,1)" Dataset
+@enduml
