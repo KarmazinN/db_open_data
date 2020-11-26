@@ -63,6 +63,6 @@ entity User
   Datafile "(0,*)"-down->"(1,1)" Dataset
   Category "(1,1)"<-l-"(0,*)" Dataset
   Metadata "(0,*)" --> "(1,1)" Dataset
-
+  Category "(1,1) parent"<-"(0,*)" Category
   Comment "(0,*)" --> "(1,1)" Dataset
 @enduml
