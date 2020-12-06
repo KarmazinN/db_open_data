@@ -10,5 +10,5 @@
 
 ## Реляційна схема
 
-![alt text](https://github.com/KarmazinN/db_open_data/blob/master/src/uml/123456.jpg)
+![alt text](https://github.com/KarmazinN/db_open_data/blob/master/src/jpg/SQL.jpg)
 
