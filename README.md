@@ -9,6 +9,13 @@
 - Встановлений [git](https://git-scm.com/downloads)
 - Встановлений [Django](https://www.djangoproject.com/)
 
+### Встановлення
+```
+git clone https://github.com/KarmazinN/db_open_data
+pip install django
+python manage.py runserver
+```
+
 - Authors:
   - Андрейцов Ярослав  yarikkgg@gmail.com
   - Биков Єгор         Kaciiuahbi4@gmai.com
