@@ -2,6 +2,12 @@
 
 ![alt text](src/image/logo4.0.jpg "Open data management system")
 
+## Інсталяція
+
+### Передумови
+- Вставновлений та запущений [MySQL Server](https://dev.mysql.com/downloads/installer/)
+- Встановлений [git](https://git-scm.com/downloads)
+- Встановлений [Django](https://www.djangoproject.com/)
 
 - Authors:
   - Андрейцов Ярослав  yarikkgg@gmail.com
