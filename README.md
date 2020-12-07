@@ -15,8 +15,7 @@ git clone https://github.com/KarmazinN/db_open_data
 pip install django
 python manage.py runserver
 ```
-
-- Authors:
+## Автори
   - Андрейцов Ярослав  yarikkgg@gmail.com
   - Биков Єгор         Kaciiuahbi4@gmai.com
   - Денисенко Михайло  midenisenko@gmail.com
