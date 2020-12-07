@@ -1,6 +1,6 @@
 # Система управління відкритими даними
 
-![alt text](src/image/logo2.0.jpg "Open data management system")
+![alt text](src/image/logo0.jpg "Open data management system")
 
 
 - Authors:
