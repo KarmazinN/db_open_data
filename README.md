@@ -12,6 +12,7 @@
 ### Встановлення
 ```
 git clone https://github.com/KarmazinN/db_open_data
+cd 
 pip install Django
 python manage.py runserver
 ```
