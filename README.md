@@ -1,7 +1,5 @@
 # Система управління відкритими даними
 
-![alt text](src/image/logo4.0.jpg "Open data management system")
-
 ## Інсталяція
 
 ### Передумови
